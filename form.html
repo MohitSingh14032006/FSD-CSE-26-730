@@ -1,0 +1,124 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Form</title>
+    <style>
+        *{
+            margin: 0px;
+            padding: 0px;
+            box-sizing: border-box;
+        }
+        form h1{
+            margin-bottom: 10px;
+            text-align: center;
+        }
+        form{
+            width: 500px;
+            margin: auto;
+            padding-top: 10px;
+            padding-bottom: 10px;
+            padding-left: 20px;
+            background-color: pink;            
+        }
+        form div{
+            margin-bottom: 10px;
+        }       
+        form #mobileDiv input:nth-child(2){
+            width: 30px;
+        }
+        form .addDiv{
+            display: flex;
+            align-items: center;
+            gap: 5px;
+        }
+        form .addDiv textarea{
+            width: 250px;
+            height: 80px;
+            resize: none;
+        }
+        form .addDiv textarea:focus{
+            outline: 0px;
+            padding: 5px;
+        }
+        form button{
+            padding: 8px 16px;
+            border: none;
+            border-radius: 5px;
+            color: white;
+            font-weight: bold;
+            background: #65abc7;
+            background: linear-gradient(90deg, rgba(101, 171, 199, 1) 0%, rgba(9, 118, 186, 1) 100%, rgba(237, 221, 83, 1) 100%);
+        }
+    </style>
+</head>
+<body>
+    <form action="">
+        <h1>Student Registration Form</h1>
+        <div>
+            <label>Roll No. :</label>
+            <input type="text" />
+        </div>
+        <div>
+            <label>Student Name :</label>
+            <input type="text" placeholder="First Name"/>
+            <input type="text" placeholder="Last Name"/>
+        </div>
+        <div>
+            <label>Father's Name :</label>
+            <input type="text"/>
+        </div>
+        <div>
+            <label>Date  of birth :</label>
+            <input type="date"/>
+            <span>(DD-MM-YYYY)</span>
+        </div>
+        <div id="mobileDiv">
+            <label>Mobile No.:</label>
+            <input type="text" value="+91" readonly/>
+            <input type="tel"/>            
+        </div>
+        <div>
+            <label>Email id:</label>
+            <input type="email"/>         
+        </div>
+        <div>
+            <label>Password:</label>
+            <input type="password"/>
+        </div>
+        <div id="genderDiv">
+            <label>Gender:</label>
+            <input type="radio" name="gender"/>Male               
+            <input type="radio" name="gender"/>Female                
+        </div>
+        <div>
+            <label>Department:</label>
+            <input type="checkbox" name="dept"/>CSE
+            <input type="checkbox" name="dept"/>IT   
+            <input type="checkbox" name="dept"/>ECE
+            <input type="checkbox" name="dept"/>Civil     
+            <input type="checkbox" name="dept"/>Mech         
+        </div>
+        <div>
+            <label>Course:</label>
+            <select name="" id="">
+                <option value="">-----Select Current Course's-----</option>
+            </select>   
+        </div>
+        <div>
+            <label>Student photo:</label>
+            <input type="file"/>  
+        </div>
+        <div>
+            <label>City:</label>
+            <input type="text"/>  
+        </div>
+        <div class="addDiv">
+            <label>Address:</label>
+            <textarea></textarea> 
+        </div>
+        <button>Submit</button>
+    </form>
+</body>
+</html>

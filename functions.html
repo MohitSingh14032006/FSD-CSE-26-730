@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+        function a_func(a,b){
+            let s,m,mu,rem;
+            s=a+b;
+            m=a-b;
+            mu=a*b;
+            rem=a%b;
+            console.log(`Sum = ${s} Subtraction = ${m} multiplication = ${mu} and rem = ${rem}`);            
+        }
+        a_func(10,5);
+        let r = function(a,b){
+            console.log(a+b);            
+        }
+        r(10,5);
+
+        let square = (a) =>{ return a*a; }
+        console.log(square(5));
+        
+    </script>
+</body>
+</html>
